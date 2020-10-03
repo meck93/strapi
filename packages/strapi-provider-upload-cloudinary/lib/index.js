@@ -17,7 +17,7 @@ module.exports = {
       upload(file, customConfig = {}) {
         return new Promise((resolve, reject) => {
           const upload_stream = cloudinary.uploader.upload_stream(
-            { resource_type: 'auto', public_id: file.hash, ...customConfig },
+            { resource_type: 'auto', public_id: file.hash, customConfig: customConfig },
             (err, image) => {
               if (err) {
                 if (err.message.includes('File size too large')) {
@@ -40,6 +40,7 @@ module.exports = {
               file.provider_metadata = {
                 public_id: image.public_id,
                 resource_type: image.resource_type,
+                ...image.customConfig,
               };
               resolve();
             }
