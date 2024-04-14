@@ -5053,19 +5053,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@playwright/test@npm:1.37.0-alpha-jul-20-2023":
-  version: 1.37.0-alpha-jul-20-2023
-  resolution: "@playwright/test@npm:1.37.0-alpha-jul-20-2023"
+"@playwright/test@npm:1.43.1":
+  version: 1.43.1
+  resolution: "@playwright/test@npm:1.43.1"
   dependencies:
-    "@types/node": "*"
-    fsevents: 2.3.2
-    playwright-core: 1.37.0-alpha-jul-20-2023
-  dependenciesMeta:
-    fsevents:
-      optional: true
+    playwright: 1.43.1
   bin:
     playwright: cli.js
-  checksum: 1bd4a3a9b6b53fe923917ba8dce3c7d89949bc04028d4b0d87e9681f119441b5c8e455fada13f7024a65f4fcb7ec794e9ead567f148d67cd246dd1b1198d00d5
+  checksum: f9db387b488a03125e5dc22dd7ffed9c661d1f2428188912a35a2235b3bd9d826b390e7600d04998639994f5a96695b9dc9034ca9cb59e261d2fdee93a60df3f
   languageName: node
   linkType: hard
 
@@ -24868,12 +24863,27 @@ __metadata:
   languageName: node
   linkType: hard
 
-"playwright-core@npm:1.37.0-alpha-jul-20-2023":
-  version: 1.37.0-alpha-jul-20-2023
-  resolution: "playwright-core@npm:1.37.0-alpha-jul-20-2023"
+"playwright-core@npm:1.43.1":
+  version: 1.43.1
+  resolution: "playwright-core@npm:1.43.1"
   bin:
     playwright-core: cli.js
-  checksum: ab00bd1a66715ee15b3061a910bdb02466f51524e1342d01e31069069a0c47c20d667d62cf92042774b80dabe74333c38bf5b4caa3ba560aa85a4eaf89b826d8
+  checksum: 7c96b3a4a4bce2ee22c3cd680c9b0bb9e4bf07ee4b51d1e9a7f47a6489c7b0b960d4b550e530b8f41d1ffeadd26c7c6bb626ae8689dfd90dce1cb8e35ae78ff7
+  languageName: node
+  linkType: hard
+
+"playwright@npm:1.43.1":
+  version: 1.43.1
+  resolution: "playwright@npm:1.43.1"
+  dependencies:
+    fsevents: 2.3.2
+    playwright-core: 1.43.1
+  dependenciesMeta:
+    fsevents:
+      optional: true
+  bin:
+    playwright: cli.js
+  checksum: de9db021f93018a18275bbb5af09ebf1804aa0534f47578b35b440064abc774509740205802824afc94a99fc84dd55ffe9e215718ad3ecc691b251ab3882b096
   languageName: node
   linkType: hard
 
@@ -28106,7 +28116,7 @@ __metadata:
     "@babel/core": ^7.20.12
     "@babel/eslint-parser": ^7.19.1
     "@babel/preset-react": 7.18.6
-    "@playwright/test": 1.37.0-alpha-jul-20-2023
+    "@playwright/test": 1.43.1
     "@strapi/admin-test-utils": "workspace:*"
     "@strapi/eslint-config": 0.2.0
     "@swc/cli": 0.1.62
